@@ -5,7 +5,7 @@ using UnityEngine.SocialPlatforms;
 
 public class GearBox : MonoBehaviour
 {
-    public GameObject handle, N, G1, G2, G3, G4, G5, R, Gear;
+    public GameObject handle, N, N1, N2, G1, G2, G3, G4, G5, R, Gear;
     Vector3 initialGearNPosition, initialHPosition;
 
     public int gear = 0;
@@ -65,6 +65,35 @@ public class GearBox : MonoBehaviour
         }
 
     }
+
+
+    public void DropGearN1()
+    {
+        float distance = Vector3.Distance(handle.transform.position, N1.transform.position);
+        if (distance < 55)
+        {
+            canvasGroup.alpha = 1f;
+            handle.transform.position = N.transform.position;
+            gear = 0;
+            rearFalse();
+        }
+
+    }
+
+    public void DropGearN2()
+    {
+        float distance = Vector3.Distance(handle.transform.position, N2.transform.position);
+        if (distance < 55)
+        {
+            canvasGroup.alpha = 1f;
+            handle.transform.position = N.transform.position;
+            gear = 0;
+            rearFalse();
+        }
+
+    }
+
+
 
     public void DropGear1()
     {
@@ -164,4 +193,5 @@ public class GearBox : MonoBehaviour
             inReverse = false;
         }
     }
+
 }
