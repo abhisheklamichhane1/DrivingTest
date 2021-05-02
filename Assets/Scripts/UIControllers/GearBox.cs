@@ -15,7 +15,7 @@ public class GearBox : MonoBehaviour
     bool inReverse;
 
     public CanvasGroup canvasGroup;
-
+    public CarController carController;
 
     void Start()
     {
@@ -42,6 +42,35 @@ public class GearBox : MonoBehaviour
             handle.transform.position = centerPosition + fromOriginToObject;
             transform.position = handle.transform.position;
 
+        }
+
+        if (gear < 1)
+        {
+            carController.carSetting.LimitForwardSpeed = 0;
+        }
+        else if (gear < 2)
+        {
+            carController.carSetting.LimitForwardSpeed = 15;
+        }
+        else if (gear < 3)
+        {
+            carController.carSetting.LimitForwardSpeed = 20;
+        }
+        else if (gear < 4)
+        {
+            carController.carSetting.LimitForwardSpeed = 25;
+        }
+        else if (gear < 5)
+        {
+            carController.carSetting.LimitForwardSpeed = 30;
+        }
+        else if (gear < 6)
+        {
+            carController.carSetting.LimitForwardSpeed = 35;
+        }
+        else if (gear < 7)
+        {
+            carController.carSetting.LimitForwardSpeed = 12;
         }
     }
     public void DragGearN()
@@ -70,7 +99,7 @@ public class GearBox : MonoBehaviour
     public void DropGearN1()
     {
         float distance = Vector3.Distance(handle.transform.position, N1.transform.position);
-        if (distance < 55)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = N.transform.position;
@@ -83,7 +112,7 @@ public class GearBox : MonoBehaviour
     public void DropGearN2()
     {
         float distance = Vector3.Distance(handle.transform.position, N2.transform.position);
-        if (distance < 55)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = N.transform.position;
@@ -98,7 +127,7 @@ public class GearBox : MonoBehaviour
     public void DropGear1()
     {
         float distance = Vector3.Distance(handle.transform.position, G1.transform.position);
-        if (distance < 70)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = G1.transform.position;
@@ -111,7 +140,7 @@ public class GearBox : MonoBehaviour
     public void DropGear2()
     {
         float distance = Vector3.Distance(handle.transform.position, G2.transform.position);
-        if (distance < 70)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = G2.transform.position;
@@ -125,7 +154,7 @@ public class GearBox : MonoBehaviour
     {
         float distance = Vector3.Distance(handle.transform.position, G3.transform.position);
 
-        if (distance < 70)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = G3.transform.position;
@@ -137,7 +166,7 @@ public class GearBox : MonoBehaviour
     public void DropGear4()
     {
         float distance = Vector3.Distance(handle.transform.position, G4.transform.position);
-        if (distance < 70)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = G4.transform.position;
@@ -151,7 +180,7 @@ public class GearBox : MonoBehaviour
     {
         float distance = Vector3.Distance(handle.transform.position, G5.transform.position);
 
-        if (distance < 70)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = G5.transform.position;
@@ -165,7 +194,7 @@ public class GearBox : MonoBehaviour
     {
         float distance = Vector3.Distance(handle.transform.position, R.transform.position);
 
-        if (distance < 70)
+        if (distance < 40)
         {
             canvasGroup.alpha = 1f;
             handle.transform.position = R.transform.position;

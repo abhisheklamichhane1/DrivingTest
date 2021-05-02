@@ -1717,7 +1717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 135, y: 0}
+  m_AnchoredPosition: {x: 147, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &372669935
@@ -8901,24 +8901,48 @@ MonoBehaviour:
     maxSteerAngle: 30
     shiftDownRPM: 1500
     shiftUpRPM: 2500
-    idleRPM: 500
+    idleRPM: 100
     stiffness: 2
     automaticGear: 1
     gears:
     - 0
-    - 2.5
-    - 3
-    - 3.5
-    - 4
-    - 4.5
-    - -2
+    - 1.2
+    - 1.4
+    - 1.7
+    - 1.9
+    - 2
+    - -1
     LimitBackwardSpeed: 60
-    LimitForwardSpeed: 220
+    LimitForwardSpeed: 150
   brake: 0
   curTorque: 100
   powerShift: 100
   shift: 0
   speed: 0
+  efficiencyTable:
+  - 0.6
+  - 0.65
+  - 0.7
+  - 0.75
+  - 0.8
+  - 0.85
+  - 0.9
+  - 1
+  - 1
+  - 0.95
+  - 0.8
+  - 0.7
+  - 0.6
+  - 0.5
+  - 0.45
+  - 0.4
+  - 0.36
+  - 0.33
+  - 0.3
+  - 0.2
+  - 0.1
+  - 0.05
+  efficiencyTableStep: 4.2
   currentGear: 0
   NeutralGear: 1
   motorRPM: 0
@@ -18769,7 +18793,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036852626166346062}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &1036852626166346064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20900,6 +20924,7 @@ MonoBehaviour:
   rearViewImage: {fileID: 3853419974841615318}
   rearViewCam: {fileID: 609180063}
   canvasGroup: {fileID: 1417810884}
+  carController: {fileID: 1187358240}
 --- !u!33 &5188861390144377236
 MeshFilter:
   m_ObjectHideFlags: 0
