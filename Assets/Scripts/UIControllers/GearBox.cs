@@ -73,6 +73,7 @@ public class GearBox : MonoBehaviour
             carController.carSetting.LimitForwardSpeed = 12;
         }
     }
+
     public void DragGearN()
     {
         canvasGroup.alpha = .6f;
@@ -120,8 +121,6 @@ public class GearBox : MonoBehaviour
         }
 
     }
-
-
 
     public void DropGear1()
     {

@@ -17,6 +17,7 @@ public class CarController : MonoBehaviour
     public GearBox gearBox;
 
 
+
     // Wheels Setting /////////////////////////////////
 
     public CarWheels carWheels;
@@ -59,6 +60,7 @@ public class CarController : MonoBehaviour
     {
         public Light[] brakeLights;
         public Light[] reverseLights;
+        
     }
 
     // Car sounds //
@@ -120,8 +122,9 @@ public class CarController : MonoBehaviour
 
         public float[] gears = { -10f, 9f, 6f, 4.5f, 3f, 2.5f };
 
-
+        [HideInInspector]
         public float LimitBackwardSpeed = 60.0f;
+        [HideInInspector]
         public float LimitForwardSpeed = 220.0f;
     }
 
@@ -161,9 +164,9 @@ public class CarController : MonoBehaviour
 
     private bool shifting = false;
 
-    float[] efficiencyTable = { 0.6f, 0.65f, 0.7f, 0.75f, 0.8f, 0.85f, 0.9f, 1.0f, 1.0f, 0.95f, 0.80f, 0.70f, 0.60f, 0.5f, 0.45f, 0.40f, 0.36f, 0.33f, 0.30f, 0.20f, 0.10f, 0.05f };
+    public float[] efficiencyTable = { 0.6f, 0.65f, 0.7f, 0.75f, 0.8f, 0.85f, 0.9f, 1.0f, 1.0f, 0.95f, 0.80f, 0.70f, 0.60f, 0.5f, 0.45f, 0.40f, 0.36f, 0.33f, 0.30f, 0.20f, 0.10f, 0.05f };
 
-    float efficiencyTableStep = 4.20f;
+    public float efficiencyTableStep = 5f;
 
     private float Pitch;
     private float PitchDelay;
