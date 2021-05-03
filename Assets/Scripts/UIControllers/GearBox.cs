@@ -29,7 +29,7 @@ public class GearBox : MonoBehaviour
     private void Update()
     {
 
-        float radius = 130; 
+        float radius = 145; 
         Vector3 centerPosition = Gear.transform.position;
 
         
