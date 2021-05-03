@@ -108,7 +108,7 @@ public class CarController : MonoBehaviour
 
         public Vector3 shiftCentre = new Vector3(0.0f, -0.8f, 0.0f);
 
-        public float maxSteerAngle = 25.0f;
+        public float maxSteerAngle = 30.0f;
 
         public float shiftDownRPM = 1500.0f;
         public float shiftUpRPM = 2500.0f;
@@ -116,12 +116,14 @@ public class CarController : MonoBehaviour
 
         public float stiffness = 2.0f;
 
+        [HideInInspector]
         public bool automaticGear = true;
 
         public float[] gears = { -10f, 9f, 6f, 4.5f, 3f, 2.5f };
 
-
+        [HideInInspector]
         public float LimitBackwardSpeed = 60.0f;
+        [HideInInspector]
         public float LimitForwardSpeed = 220.0f;
     }
 
@@ -161,9 +163,9 @@ public class CarController : MonoBehaviour
 
     private bool shifting = false;
 
-    float[] efficiencyTable = { 0.6f, 0.65f, 0.7f, 0.75f, 0.8f, 0.85f, 0.9f, 1.0f, 1.0f, 0.95f, 0.80f, 0.70f, 0.60f, 0.5f, 0.45f, 0.40f, 0.36f, 0.33f, 0.30f, 0.20f, 0.10f, 0.05f };
+    public  float[] efficiencyTable = { 0.6f, 0.65f, 0.7f, 0.75f, 0.8f, 0.85f, 0.9f, 1.0f, 1.0f, 0.95f, 0.80f, 0.70f, 0.60f, 0.5f, 0.45f, 0.40f, 0.36f, 0.33f, 0.30f, 0.20f, 0.10f, 0.05f };
 
-    float efficiencyTableStep = 4.20f;
+    public float efficiencyTableStep = 4.20f;
 
     private float Pitch;
     private float PitchDelay;
@@ -829,7 +831,7 @@ public class CarController : MonoBehaviour
         }
 
         // calculate pitch (keep it within reasonable bounds)
-        Pitch = Mathf.Clamp(1.2f + ((motorRPM - carSetting.idleRPM) / (carSetting.shiftUpRPM - carSetting.idleRPM)), 1.0f, 10.0f);
+        Pitch = Mathf.Clamp(.8f + ((motorRPM - carSetting.idleRPM) / (carSetting.shiftUpRPM - carSetting.idleRPM)), .8f, 5.0f);
 
         shiftTime = Mathf.MoveTowards(shiftTime, 0.0f, 0.1f);
 

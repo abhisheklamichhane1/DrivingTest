@@ -29,7 +29,7 @@ public class GearBox : MonoBehaviour
     private void Update()
     {
 
-        float radius = 130; 
+        float radius = 133; 
         Vector3 centerPosition = Gear.transform.position;
 
         
@@ -50,27 +50,27 @@ public class GearBox : MonoBehaviour
         }
         else if (gear < 2)
         {
-            carController.carSetting.LimitForwardSpeed = 15;
+            carController.carSetting.LimitForwardSpeed = 16;
         }
         else if (gear < 3)
         {
-            carController.carSetting.LimitForwardSpeed = 20;
+            carController.carSetting.LimitForwardSpeed = 25;
         }
         else if (gear < 4)
         {
-            carController.carSetting.LimitForwardSpeed = 25;
+            carController.carSetting.LimitForwardSpeed = 35;
         }
         else if (gear < 5)
         {
-            carController.carSetting.LimitForwardSpeed = 30;
+            carController.carSetting.LimitForwardSpeed = 45;
         }
         else if (gear < 6)
         {
-            carController.carSetting.LimitForwardSpeed = 35;
+            carController.carSetting.LimitForwardSpeed = 55;
         }
         else if (gear < 7)
         {
-            carController.carSetting.LimitForwardSpeed = 12;
+            carController.carSetting.LimitForwardSpeed = 66;
         }
     }
     public void DragGearN()
