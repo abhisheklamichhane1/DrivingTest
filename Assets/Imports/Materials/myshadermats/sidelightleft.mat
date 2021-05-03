@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: glow 1
+  m_Name: sidelightleft
   m_Shader: {fileID: -6465566751694194690, guid: 49a6cd0ddcc67b447826c365389ff6ef, type: 3}
   m_ShaderKeywords: _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
   m_LightmapFlags: 2
@@ -113,7 +113,7 @@ Material:
     - Boolean_fefe846c3e614e8fb02391c015d6ab1a: 1
     - Vector1_390fc3e0b9304114a6275fe5b9213299: 8
     - Vector1_3e096cfe216f437aaf6c710f271a4998: 1
-    - Vector1_839ed6efa5f94c0b98ece9488f7783fd: 0.35
+    - Vector1_839ed6efa5f94c0b98ece9488f7783fd: 0.4
     - Vector1_cf248d3fe752496e880d5a2beeaf0ed1: 0.5
     - _AlphaClip: 0
     - _Blend: 0

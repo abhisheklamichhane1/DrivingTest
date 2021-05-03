@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: car_shaderTest
-  m_Shader: {fileID: -6465566751694194690, guid: 64bcfc4bca878a846881093686352b3b, type: 3}
-  m_ShaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
+  m_Name: sidelightRight
+  m_Shader: {fileID: -6465566751694194690, guid: 49a6cd0ddcc67b447826c365389ff6ef, type: 3}
+  m_ShaderKeywords: _EMISSION _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -19,16 +19,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Cubemap_0b3ca4729c544227afc3dc3219004f30:
-        m_Texture: {fileID: 8900000, guid: 6989393b4c0776c41acb287b2b0141b6, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Cubemap_ca407574fae7443d841c8bb6d7c48986:
-        m_Texture: {fileID: 8900000, guid: 6989393b4c0776c41acb287b2b0141b6, type: 3}
+    - Texture2D_10b0274ed5b94189945810622a1bf026:
+        m_Texture: {fileID: 2800000, guid: 028dca64881941542ab6a686af9d4575, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_88a917280e0c4fa89f08b45e73462932:
-        m_Texture: {fileID: 2800000, guid: 7a81f3bf9c0efc0498cd31ddc3754cf0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8b5e2f1bb44b7ec4b836b507f4e217a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_a4b259a8c588471c89cb295475c8e6e5:
@@ -40,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_bd32df1053524eec8857bbf043c36e89:
-        m_Texture: {fileID: 2800000, guid: ca1d897fa66352341ad3f204541e1779, type: 3}
+        m_Texture: {fileID: 2800000, guid: aaf35d9b7366df64ba383dfc4a4f5097, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -53,10 +49,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ClearCoatMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _CubemapAsset_8c9b6c7f234648d083e92c278c245704_Out_0:
-        m_Texture: {fileID: 8900000, guid: 6e20c57c1c81bb744a4809b0539f0dea, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -80,11 +72,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: aaf35d9b7366df64ba383dfc4a4f5097, type: 3}
+        m_Texture: {fileID: 2800000, guid: dc5a81922fa607d4a800b002647f9b9d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: ad92916df607ffb4c9fc1be49f715548, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9adc4febc4c53b740a56b7aa281468b0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -92,15 +84,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleCubemap_59a40df8f6fb4be4ab80fa532608724b_Cube_1:
-        m_Texture: {fileID: 8900000, guid: 6e20c57c1c81bb744a4809b0539f0dea, type: 2}
+        m_Texture: {fileID: 8900000, guid: 395577cd7f930df4f85e33d344d526bd, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_f17bd45f03d04cc7a683d2cbc440564f_Out_0:
-        m_Texture: {fileID: 2800000, guid: d1507bcc4c1aa9a4c89b25f1f5acda27, type: 3}
+    - _Texture2DAsset_b1780fccd22f4e72b71d312c292be668_Out_0:
+        m_Texture: {fileID: 2800000, guid: 028dca64881941542ab6a686af9d4575, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -116,13 +108,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_30b33a5d4b5c4be5879c53f6fea18750: 0.1
-    - Vector1_50ab246fa04543338a4ef71db24bf9a4: 1
-    - Vector1_539e102c772146079b549ea4804b538c: 0
-    - Vector1_6a97337a5e6d4ef4a7a86f1a70ae3512: 0.7
-    - Vector1_ab103aa3ef2b40e9b92c493353f9f2f6: 0.5
-    - Vector1_c8c38a0c44214cf78cab758aa3bd83a8: 2.8
-    - Vector1_da119d09a5d049309ab52a844884a3ed: 0.86
+    - Boolean_a003f9457aba41bb84bb6bc5fa3c58e8: 0
+    - Boolean_f1946f1d44594bb990c75572fea66225: 1
+    - Boolean_fefe846c3e614e8fb02391c015d6ab1a: 1
+    - Vector1_390fc3e0b9304114a6275fe5b9213299: 8
+    - Vector1_3e096cfe216f437aaf6c710f271a4998: 1
+    - Vector1_839ed6efa5f94c0b98ece9488f7783fd: 0.4
+    - Vector1_cf248d3fe752496e880d5a2beeaf0ed1: 0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -132,20 +124,20 @@ Material:
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
-    - _DetailNormalMapScale: 0.74
+    - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossinessSource: 0
     - _GlossyReflections: 0
-    - _Metallic: 1
+    - _Metallic: 0.097
     - _OcclusionStrength: 1
     - _Parallax: 0.035
-    - _QueueOffset: 0
+    - _QueueOffset: 1
     - _ReceiveShadows: 1
     - _Shininess: 0
-    - _Smoothness: 0.559
+    - _Smoothness: 0.75
     - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
     - _SpecSource: 0
@@ -155,12 +147,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_03ab511d04f34804b46fb1a8e7c1be8a: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0}
-    - Color_c81f7e0dd5a944a29126acba9c56f8e0: {r: 1, g: 1, b: 1, a: 0}
-    - Color_d9e3d432a79d46a5a6e711da82966a76: {r: 0, g: 0, b: 0, a: 0}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - Color_646284e2ac1d4ea28f0d082580d3f208: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0}
+    - Color_8b23e6d90eff4587a26a8552d6379178: {r: 1.8196079, g: 0.09411765, b: 0.09411765, a: 0}
+    - Color_9c0b708b13ff445fab2d905fd8fb623d: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0.9, g: 0.85679996, b: 0.83879995, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.028301887, g: 0.028301887, b: 0.028301887, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4753283782161785763
