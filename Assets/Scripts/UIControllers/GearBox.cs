@@ -27,13 +27,13 @@ public class GearBox : MonoBehaviour
     }
 
     private void Update()
-    {
 
-        float radius = 133; 
+    {
+        float radius = 133;
         Vector3 centerPosition = Gear.transform.position;
 
-        
-        float distance = Vector3.Distance(handle.transform.position, centerPosition); 
+
+        float distance = Vector3.Distance(handle.transform.position, centerPosition);
 
         if (distance > radius) 
         {

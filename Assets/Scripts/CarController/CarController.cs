@@ -8,6 +8,7 @@ public enum ControlMode { keyboard = 1, mobile = 2 }
 
 
 public class CarController : MonoBehaviour
+
 {
 
     public ControlMode controlMode = ControlMode.keyboard;
@@ -18,7 +19,7 @@ public class CarController : MonoBehaviour
 
 
 
-    // Wheels Setting /////////////////////////////////
+    // Wheels Setting //
 
     public CarWheels carWheels;
 
@@ -217,7 +218,6 @@ public class CarController : MonoBehaviour
 
     private class WheelComponent
     {
-
         public Transform wheel;
         public WheelCollider collider;
         public Vector3 startPos;
@@ -474,7 +474,6 @@ public class CarController : MonoBehaviour
 
             if (controlMode == ControlMode.keyboard)
             {
-
 
                 accel = 0;
                 brake = false;
