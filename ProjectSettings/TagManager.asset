@@ -6,6 +6,12 @@ TagManager:
   tags:
   - road
   - environment
+  - Warning Collider
+  - EnterEight
+  - TurnOnIndicator
+  - StreetLight
+  - StopOnSlope
+  - SlowDown
   layers:
   - Default
   - TransparentFX
